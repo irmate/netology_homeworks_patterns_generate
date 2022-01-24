@@ -31,19 +31,11 @@ public class Person {
     }
 
     public boolean hasAge() {
-        if (ageInfo == AgeInfo.UNKNOWN) {
-            return false;
-        } else {
-            return true;
-        }
+        return ageInfo != AgeInfo.UNKNOWN;
     }
 
     public boolean hasAddress() {
-        if (address != null) {
-            return true;
-        } else {
-            return false;
-        }
+        return address != null;
     }
 
     public String getName() {
